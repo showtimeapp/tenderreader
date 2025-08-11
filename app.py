@@ -24,6 +24,10 @@ import pytesseract
 from PIL import Image
 import io
 import fitz  # PyMuPDF
+import sys
+import pysqlite3
+
+sys.modules["sqlite3"] = pysqlite3
 
 # OpenAI and Vector Store
 import openai
